@@ -1,0 +1,256 @@
+@font-face {
+    font-family: FONT;
+    src: url(font.woff2);
+}
+
+html,
+body {
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    /* IE, Edge, Opera and Firefox */
+    display: none;
+}
+
+.cf:before,
+.cf:after {
+    display: table;
+    content: '';
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+.relative {
+    position: relative;
+}
+
+.wrap {
+    white-space: nowrap;
+}
+
+.block {
+    display: block;
+}
+
+.font-color {
+    background-image: linear-gradient(#fff .1%, rgb(138, 138, 138));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.fa.icon-font {
+    font-size: 40px;
+}
+
+.scroll-down-icon {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+span.scroll-down-icon a {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.bg1 {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(33, 27, 52), rgb(25, 40, 56));
+}
+
+.bg2 {
+    background-image: linear-gradient(rgb(25, 40, 56), rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+.app main {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+
+    text-align: center;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+    bottom: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.content-padding {
+    padding: 0 50px;
+}
+
+.text {
+    justify-content: center;
+    align-items: center;
+
+    font-family: "FONT";
+
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.button {
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: rgba(10, 10, 10, 50%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+
+    font-size: 19px;
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: box-shadow .5s ease, text-shadow .5s ease;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 50px .5px rgba(150, 90, 180, .4);
+    text-shadow: 0px 0px 10px rgba(150, 90, 180, 1);
+}
+
+.box {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box:last-child {
+    margin-right: 0;
+}
+
+.text-small {
+    justify-content: center;
+    align-items: center;
+
+    font-family: "FONT";
+
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #000;
+    font-family: "FONT";
+    color: #ffffff;
+    padding: 25px 50px;
+}
+
+footer a:link {
+    color: #fff;
+}
+
+footer a:visited {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(150, 90, 180, 1);
+}
+
+footer a:active {
+    color: #fff;
+}
+
+@media (max-width: 750px) {
+    .text {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-small {
+        font-size: 1rem;
+    }
+}
+
+@media (max-height: 900px) {
+    .center {
+        position: absolute;
+        top: 45%;
+        transform: translate(0%, -50%);
+    }
+}
+
+
+.buttonUpload {
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: rgba(10, 10, 10, 50%);
+    box-shadow: 0px 0px 15px .5px rgba(150, 90, 180, .4);
+	text-align: center;
+
+    font-size: 19px;
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: box-shadow .5s ease, text-shadow .5s ease;
+}
+
+.buttonUpload:hover {
+    box-shadow: 0px 0px 50px .5px rgba(150, 90, 180, .4);
+    text-shadow: 0px 0px 10px rgba(150, 90, 180, 1);
+}
+
+.progress-container {
+    top: 5vh;
+    position: relative;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px .5px rgba(150, 90, 180, .4);
+    text-shadow: 0px 0px 10px rgba(150, 90, 180, 1);
+    background-color: rgb(33, 27, 52);
+}
+
+.progress-bar {
+    border-radius: 5px;
+    width: 0;
+    height: 30px;
+    background-color: rgb(25, 40, 56);
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    box-shadow: 0px 0px 50px .5px rgba(150, 90, 180, .4);
+
+}
+
+.errorMsg {
+    padding: 50px;
+    background-image: linear-gradient(#ff0000 .1%, #900101);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
